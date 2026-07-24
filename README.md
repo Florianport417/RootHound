@@ -15,14 +15,17 @@ You landed a shell as a low-privilege user. Now what? Instead of scrolling throu
 
 ## 🚀 Usage
 
-```bash
-# feed it LinPEAS output:
-python3 roothound.py linpeas.txt -o report.html
+## 📥 Installation
 
-# ...or use the built-in collector (runs on the target if you don't want to run Linpeas.sh):
-./roothound-collect.sh > loot.json
-python3 roothound.py loot.json -o report.html
+**Option 1 — clone it:**
+```bash
+git clone https://github.com/YOUR_USERNAME/roothound.git
+cd roothound
+python3 roothound.py linpeas.txt -o report.html
 ```
+
+**Option 2 — download ZIP:**
+Click the green **Code** button above → **Download ZIP**, unzip, and run it.
 
 Then open `report.html` in any browser.
 
