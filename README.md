@@ -21,6 +21,7 @@ You landed a shell as a low-privilege user. Now what? Instead of scrolling throu
 ```bash
 git clone https://github.com/roothound.git
 cd roothound
+# feed it LinPEAS output:
 python3 roothound.py linpeas.txt -o report.html
 ```
 
