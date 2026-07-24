@@ -19,7 +19,7 @@ You landed a shell as a low-privilege user. Now what? Instead of scrolling throu
 
 **Option 1 — clone it:**
 ```bash
-git clone https://github.com/YOUR_USERNAME/roothound.git
+git clone https://github.com/roothound.git
 cd roothound
 python3 roothound.py linpeas.txt -o report.html
 ```
