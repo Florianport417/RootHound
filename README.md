@@ -38,6 +38,3 @@ Then open `report.html` in any browser.
 
 Roothound is built for **authorized** security testing and education (CTFs, HTB, your own labs). Only use it on systems you have explicit permission to test.
 
-## 📄 License
-
-MIT
