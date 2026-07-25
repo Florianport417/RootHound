@@ -709,6 +709,9 @@ def emit_html(graph, findings, libdir, srcname):
     likely    = sum(1 for p in graph["paths"] if p["severity"] == "likely")
 
     data = json.dumps(graph)
+    data = (data.replace("<", "\\u003c").replace(">", "\\u003e")
+            .replace("&", "\\u0026")
+            .replace("\u2028", "\\u2028").replace("\u2029", "\\u2029"))
     tmpl = TEMPLATE
     tmpl = tmpl.replace("/*CYTO*/", cyto)
     tmpl = tmpl.replace("/*DAGRE*/", dagre)
