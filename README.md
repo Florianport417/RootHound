@@ -19,11 +19,12 @@ You landed a shell as a low-privilege user. Now what? Instead of scrolling throu
 
 **Option 1 — clone it:**
 ```bash
-git clone https://github.com/roothound.git
-cd roothound
+git clone https://github.com/Noz2/RootHound.git
+cd RootHound
 # feed it LinPEAS output:
-python3 roothound.py linpeas.txt -o report.html
+python3 RootHound.py linpeas.txt -o report.html
 ```
+
 
 **Option 2 — download ZIP:**
 Click the green **Code** button above → **Download ZIP**, unzip, and run it.
