@@ -4,7 +4,7 @@
 
 You landed a shell as a low-privilege user. Now what? Instead of scrolling through hundreds of lines of enumeration output, Roothound draws you a clear graph of **every path to root** — and tells you exactly how to abuse each one.
 
-## ✨ Features
+##  Features
 
 - 🗺️ **Attack-path graph** — see `YOU → technique → ROOT`, left to right
 - 🔴 **Confidence coloring** — confirmed paths in red, likely leads in amber
@@ -13,9 +13,9 @@ You landed a shell as a low-privilege user. Now what? Instead of scrolling throu
 - 🧠 **Editable rulebook** — SUID/SGID, sudo, capabilities, dangerous groups, writable files, NFS, PATH hijack, and kernel/sudo CVE matching
 - 📴 **Fully offline** — no dependencies, no internet, single self-contained HTML output
 
-## 🚀 Usage
+##  Usage
 
-## 📥 Installation
+##  Installation
 
 **Option 1 — clone it:**
 ```bash
