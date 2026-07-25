@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-RootHound  -  LinPEAS -> privilege-escalation attack-path graph  (working title)
+RootHound  -  LinPEAS -> privilege-escalation attack-path graph 
 
-Offline. No AI, no API, no internet. Reads a LinPEAS output file, matches
+Reads a LinPEAS output file, matches
 findings against an editable rulebook, and writes a single self-contained
 HTML file that draws the paths from your current user to root -- colour-coded
 by how confident we are the path works.
