@@ -35,8 +35,13 @@ Then open `report.html` in any browser.
 <img width="1709" height="1031" alt="Screenshot 2026-07-24 at 19 03 33" src="https://github.com/user-attachments/assets/5e0d97a7-ce22-4bff-8501-ef7cdb8a7cd1" />
 
 
+
+
 <img width="1710" height="1036" alt="Screenshot 2026-07-24 at 19 04 00" src="https://github.com/user-attachments/assets/4c1e5aa1-730b-48e1-af24-32b0662c5d21" />
 
+
+
+See Roothound in action: **[Watch the demo on X →](https://x.com/N0ur2dd1n2/status/2080720705184825372?s=20)**
 
 ## ⚠️ Disclaimer
 
